@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors({
-    origin: ['http://localhost:5173', 'https://flash-learn-rho.vercel.app'], // Allow both local dev and production
+    origin:'https://flash-learn-rho.vercel.app', // Allow both local dev and production
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
 }));
@@ -29,6 +29,6 @@ app.get('/', (req, res) => {
     res.send('FlashLearn API is running');
 });
 
-app.listen(PORT, () => {
+app.listen(PORT,'0.0.0.0', () => {
     console.log(`Server running on port ${PORT}`);
 });
