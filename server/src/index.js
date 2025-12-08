@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors({
-    origin: 'http://localhost:5173', // Vite default port
+    origin: 'https://flash-learn-rho.vercel.app', // Vite default port
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true
 }));
