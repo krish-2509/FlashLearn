@@ -8,7 +8,7 @@ export const AuthProvider = ({ children }) => {
     const [loading, setLoading] = useState(true);
 
     // Configure axios defaults
-    axios.defaults.baseURL = 'http://localhost:3000/api';
+    axios.defaults.baseURL = 'https://flashlearn-tp14.onrender.com/api';
     axios.defaults.withCredentials = true;
 
     // Add request interceptor to include token in Authorization header
